@@ -15,12 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::resource('/', 'BooksController');
-Route::get('/books', 'BooksController@index');
+Route::resource('/books', 'BooksController');
+// Route::get('/books', 'BooksController@index');
 
-Route::get('/books/add', 'BooksController@create');
-Route::post('/books/add', 'BooksController@store');
+// Route::get('/books/add', 'BooksController@create');
+// Route::post('/books/add', 'BooksController@store');
 
-Route::get('books/delete/{id}', 'BooksController@destroy');
+// Route::get('books/delete/{id}', 'BooksController@destroy');
 
 
