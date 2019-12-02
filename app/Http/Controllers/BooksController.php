@@ -63,7 +63,8 @@ class BooksController extends Controller
      */
     public function edit($id)
     {
-        //
+        DB::select('SELECT * FROM books WHERE book_id = ?', [$id]);
+        return view();
     }
 
     /**

@@ -12,9 +12,30 @@
 
 
 </body>
-{{-- $("button").click(function(){
-    $.ajax({url: "demo_test.txt", success: function(result){
-      $("#div1").html(result);
-    }});
-  }); --}}
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+
+<script>
+$(function(){
+	$('#editButton').click(function(e){
+		e.preventDefault();
+		$.ajax({
+			url: '/books',
+			type: 'post',
+			data: $('form').serialize()
+	
+			// success: function(result) {
+			// 	// if ajax successes
+				
+			// },
+			// error: function(err){
+			// 	// If ajax error happens
+			// }
+		});
+	});
+});
+</script>
 </html>

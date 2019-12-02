@@ -13,6 +13,7 @@
     <option value="german">german</option>
 </select><br>
 <input type="text" name="year" placeholder="new release year"><br>
+<input type="number" name="author_id" placeholder="new author ID"><br>
 <input type="submit" name="submit" value="edit">
 
 </form>
