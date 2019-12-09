@@ -32,10 +32,10 @@
                 {{$book->release_year}}
             </td>
             <td>
-                <input type="submit" name="edit" value="edit">
+                <input type="submit" name="edit" value="edit" id="editButton">
             </td>
             <td>
-                <input type="submit" name="delete" value="delete">
+                <input type="submit" name="delete" value="delete" id="deleteButton">
             </td>
 
         </tr>
